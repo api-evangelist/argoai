@@ -1,23 +1,54 @@
 aid: argoai
+
 name: Argoai
-description: 'Argoai is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Argo AI is an autonomous vehicle technology company founded in 2016, backed by Ford and Volkswagen. The firm develops self‑driving hardware and software, focusing on lidar, perception, and mapping solutions. It employs engineers from over 50 countries and aims to make streets safer and more accessible. After years of testing in multiple U.S. cities, Argo AI announced a shutdown in 2022, with its assets and talent transitioning to its automotive partners.'
+
 url: https://raw.githubusercontent.com/api-evangelist/argoai/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Autonomous Vehicles
+- Lidar
+- Self-Driving
+- Ford
+- Volkswagen
+- AI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+common: []
+
 common:
+- type: Hosts
+  url: hosts/argoai-hosts.yml
+- type: Vendors
+  url: vendors/argoai-vendors.yml
+- type: DomainSecurity
+  url: security/argoai-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/argoai
+
+apis: []
+x-enrichment:
+  date: '2026-09-26'
+  status: minimal
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
